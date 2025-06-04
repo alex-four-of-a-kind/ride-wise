@@ -1,1 +1,7 @@
-export default function ElektroPage() { return <div>Elektro Page</div>; }
+import React from "react";
+
+function ElektroPage() {
+  return <div className="text-xl">Elektro Modelle</div>;
+}
+
+export default ElektroPage;
