@@ -1,28 +1,17 @@
-import { Routes, Route, Link } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import CabrioPage from './pages/CabrioPage';
+import ElektroPage from './pages/ElektroPage';
 
 export default function App() {
   return (
-    <div>
-      <header>
-        <h1>Ride-Wise</h1>
-        <nav>
-          <ul>
-            <li><Link to="/cabrio">Cabrio</Link></li>
-            <li><Link to="/elektro">Elektro</Link></li>
-            <li><Link to="/suv">SUV</Link></li>
-            <li><Link to="/sportwagen">Sportwagen</Link></li>
-            <li><Link to="/oldtimer">Oldtimer</Link></li>
-          </ul>
-        </nav>
-      </header>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<p>Startseite – Bitte eine Kategorie wählen.</p>} />
-        <Route path="/cabrio" element={<p>Cabrio-Seite</p>} />
-        <Route path="/elektro" element={<p>Elektro-Seite</p>} />
-        <Route path="/suv" element={<p>SUV-Seite</p>} />
-        <Route path="/sportwagen" element={<p>Sportwagen-Seite</p>} />
-        <Route path="/oldtimer" element={<p>Oldtimer-Seite</p>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/cabrio" element={<CabrioPage />} />
+        <Route path="/elektro" element={<ElektroPage />} />
       </Routes>
-    </div>
+    </BrowserRouter>
   );
 }

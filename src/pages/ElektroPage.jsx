@@ -1,7 +1,5 @@
-import React from "react";
+import React from 'react';
 
-function ElektroPage() {
-  return <div className="text-xl">Elektro Modelle</div>;
+export default function ElektroPage() {
+  return <div className='p-4'>Elektro Modelle</div>;
 }
-
-export default ElektroPage;

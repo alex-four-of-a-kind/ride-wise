@@ -1,7 +1,5 @@
-import React from "react";
+import React from 'react';
 
-function CabrioPage() {
-  return <div className="text-xl">Cabrio Modelle</div>;
+export default function CabrioPage() {
+  return <div className='p-4'>Cabrio Modelle</div>;
 }
-
-export default CabrioPage;
