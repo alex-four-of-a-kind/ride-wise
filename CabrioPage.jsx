@@ -1,0 +1,1 @@
+export default function CabrioPage() { return <div>Cabrio Page</div>; }

@@ -1,0 +1,1 @@
+export default function ElektroPage() { return <div>Elektro Page</div>; }
